@@ -248,12 +248,14 @@ body{
   }
   .Content_block{
     min-width: 100%;
+    padding-left: 33%;
   }
   .section_text{
-    min-width: 100%;
+    min-width: 300px;
+    padding-bottom: 20px;
   }
   .Image_title{
-    min-width: 100%;
+    min-width: 300px;
   }
   .thumbnail{
     align-self: center;
@@ -262,15 +264,25 @@ body{
     flex-direction: column;
   }
   .DYKBox{
-    /*visibility: hidden;*/
-    order:1;
+    visibility: hidden;
+    order:2;
+    padding: 0px;
     max-width: none;
     width:100%
   }
   .overview{
-    order:2;
+    order:1;
     max-width: none;
     width:100%;
+  }
+  .MiCrow_button{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 610px){
+  .Content_block{
+    padding-left: 7.5%;
   }
 }
 </style>
