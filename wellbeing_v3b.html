@@ -29,6 +29,9 @@
       </p>
     </div>
     <div class="Main_Content">
+      <div class="main_content_header">
+        The below icons give you access to specially curated playlists of micro learning modules on mental health and wellbeing.
+      </div>
       <div class="Content_block" id="block_1">
         <!--<div class="Image_title" style="order: 1">In the Workplace</div>-->
         <div class="thumbnail" style="order: 2;">
@@ -87,6 +90,9 @@
           <a href="https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d48" alt="Link to the Sodexo Ingenium Data Policy Statement which opens in a new window" target="_blank">Data Policy Statement</a>
         </P>
       </div>
+    </div>
+    <div class="Page_Footer">
+      At Sodexo we have partnered with Mi-Crow to make these learning modules available to you. The modules are typically 2 - 10 minutes in length and so are easy to watch and learn from.
     </div>
 </div>
 </body>
@@ -171,6 +177,13 @@ body{
   flex-wrap: wrap;
 }
 
+.main_content_header {
+  width:100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 12pt;
+}
 .Content_block {
   flex-direction: column;
   max-width: 33%;
@@ -263,6 +276,12 @@ body{
   align-self: flex-start;
 }
 
+.Page_Footer {
+  font-size: 10pt;
+  color: #2A295C;
+  align-self: flex-start;
+}
+
 #block_1{
   flex-direction: column;
 }
@@ -285,7 +304,7 @@ body{
   }
   .Content_block{
     min-width: 100%;
-    padding-left: 33%;
+    padding-left: 35%;
     align-self: center;
   }
   .section_text{
@@ -316,6 +335,11 @@ body{
   .MiCrow_button{
     visibility: hidden;
   }
+
+  .Snippet_box {
+    max-width: 100%;
+    align-self: center;
+  }
 }
 
 @media only screen and (max-width: 610px){
@@ -328,9 +352,10 @@ body{
   }
 
   .Content_block{
-    padding-left: 7.5%;
+    justify-content: center;
     align-self: center;
   }
+
 }
 </style>
 </html>
