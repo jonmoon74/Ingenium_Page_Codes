@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Test</title>
+</head>
+
+<script>
+
+</script>
+
+<body>
+  <div class="headline_bar">
+    Title of the gallery
+  </div>
+  <div class="gallery_container">
+    <!-- Duplicate section below for each image to include in the gallery -->
+    <div class="gallery_item" id="item_1">
+      <div class="item_title">
+        Title for image
+      </div>
+      <div class="item_image">
+        <img src="https://i.ibb.co/9T36g4g/more-ways.jpg" alt="Image of woman in bed using laptop" />
+      </div>
+    </div>
+    <!-- end of duplicate section -->
+  </div>
+  <div class="footer_bar">
+
+  </div>
+</body>
+<style>
+  body {
+
+  }
+
+  .headline_bar {
+    background-color: #2A295C;
+    color: #FFFFFF;
+    width:100%;
+    text-align:center;
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+  }
+
+  .gallery_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery_item{
+    padding: 5px;
+    flex-shrink: 1;
+  }
+
+  .item_title {
+    background-color: #2A295C;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100px;
+  }
+
+  .item_image {
+    width:50%;
+    max-width:100px;
+    display: flex;
+    flex-basis:100px;
+  }
+
+</style>
+</html>
