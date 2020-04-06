@@ -1,5 +1,8 @@
 Links for Covid Portal:
 
+SSO link to page:
+
+https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d161
 
 Background:-
 
