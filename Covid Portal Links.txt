@@ -9,10 +9,19 @@ Background:-
 https://i.ibb.co/YkBvLW6/Covid-Background-Faded.jpg
 
 
-Phase 1:
+Phase 1 Food Handlers:
 
 
 https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d658a5684-b617-491a-8400-5f13f934ddc3
+
+
+Phase 1 Hiring Managers:
+
+https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253db769186d-d1f1-4bbd-b0e7-fc25517c8fd7
+
+Phase 1 Other Users:
+
+https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253debca7c1f-24eb-4b42-9a5e-ad04877d16cc
 
 
 
