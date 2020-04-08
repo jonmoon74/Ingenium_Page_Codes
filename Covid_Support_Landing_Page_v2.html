@@ -235,7 +235,7 @@ button:hover {
     </div>
     <div class="content_container" id="block3">
       <a href="https://#" onclick="this.href=P3URL" alt="Link to the phase 3 getting ready to re-open playlist on Ingenium that opens in a new window" target="_blank">
-        <h2 class="content_header" title="As we collectively start to prepare for the new normal in the post-lockdown world we have curated a playlist of learning modules specifically intended to help you get ready to resume business, including some modules to provide you the opportunity to reflect on how things used to be and see where changes should be made in adapting to the new reality. Click the link to explore the playlist and choose modules that relate to you and your area of the business.">Phase 3 - Getting ready to re-open</h2>
+        <h2 class="content_header" title="View the playlist of content to help prepare to re-open your site">Phase 3 - Getting ready to re-open</h2>
         <img class="content_icon" src="https://i.ibb.co/jv2fBFN/White-56.png" alt="Icon image of a thumbs-up" title="View the playlist of content to help prepare to re-open your site"/>
       </a>
       <div class="infoButton">
@@ -325,8 +325,9 @@ button:hover {
       });
 
       //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
-      $(".close, .popup-overlay").on("click", function() {
+      $(".close, .popup-overlay").on("click", function(e) {
         $(".popup-overlay, .popup-content").removeClass("active");
+        e.stopPropogation();
       });
     })
   </script>
