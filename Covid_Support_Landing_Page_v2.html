@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Learning Resources for a new Normal Hub</title>
-  <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+  <script type="text/javascript"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </head>
 <style>
 
@@ -196,6 +200,43 @@ align-self: flex-end;
 
   var P3URL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d89911c38-899c-4d6c-b54e-a76391cd1dd5";
 
+  var info3Message = "As we collectively start to prepare for the new normal in the post-lockdown world we have curated a playlist of learning modules specifically intended to help you get ready to resume business, including some modules to provide you the opportunity to reflect on how things used to be and see where changes should be made in adapting to the new reality. \nClick the link to explore the playlist and choose modules that relate to you and your area of the business."
+
+  var info2Message = "Message 2"
+
+  var info1cMessage = "Message 1c"
+
+  var info1bMessage = "Message 1b"
+
+  var info1aMessage = "Message 1a"
+
+  $(document).ready(function(){
+    //jQuery code all goes inside this function
+
+    $('img').bind('click', function (evt)
+       {
+         if($(this).attr('id') == 'info1a')
+         {
+            alert('info1aMessage');
+         }
+         if($(this).attr('id') == 'info1b')
+         {
+            alert('info1aMessage');
+         }
+         if($(this).attr('id') == 'info1c')
+         {
+           alert('info1cMessage');
+         }
+         if($(this).attr('id') == 'info2')
+         {
+           alert('info2Message');
+         }
+         if($(this).attr('id') == 'info3')
+         {
+           alert(info3Message);
+         }
+       });
+  })
   </script>
 </body>
 </html>
