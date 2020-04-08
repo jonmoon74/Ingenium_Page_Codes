@@ -127,9 +127,71 @@ align-self: flex-end;
   justify-content: space-between;
 }
 
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  font-family: Sansa Pro Black, Arial, sans-serif;
+  color: #2A295C;
+  text-align: center;
+  visibility: hidden;
+  position: absolute;
+  background: #D3D0C9CC;
+  border: 3px solid #2A295C;
+  width: 45%;
+  height: auto;
+  left: 25%;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.popup-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+}
+
+button {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 30px;
+  margin: .20rem;
+  font-size: 1rem;
+  color: #2A295C;
+  background: ##D3D0C9;
+  border: 1px solid #2A295C;
+}
+
+button:hover {
+  border: 1px solid #2A295C;
+  background: #2A295C;
+  color: #D3D0C9;
+}
+
 </style>
 
 <body>
+  <!--Creates the popup body-->
+  <div class="popup-overlay">
+    <!--Creates the popup content-->
+    <div class="popup-content">
+      <h2 id="popupTitle">pop-up</h2>
+      <div id="popupMessage">message</div>
+      <div class="spacerDiv">
+        <p>
+        </p>
+      </div>
+      <!--popup's close button-->
+      <button class="close">Close</button> </div>
+    </div>
   <div class="header_bar">
     <h1>Learning Resources for a new Normal</h1>
   </div>
@@ -137,27 +199,39 @@ align-self: flex-end;
   <div class="main_area">
     <div class="content_container" id="block1a">
       <a href="https://#" onclick="this.href=P1AURL" alt="Link to the phase 1 mandatory training that should already have been completed playlist on Ingenium that opens in a new window" target="_blank">
-        <h2 class="content_header" title="As a food handling member of the team, you will be aware that there is mandatory training that is specific to your role. Clicking on this link will take you to an Ingenium playlist of training especially curated for food handlers like yourself. You should have already completed these topics, but please take a moment now to check on the playlist (blue tick) that you have done so, and if not please take some time to catch up.">Phase 1 - The Way We Work (Food Handlers)</h2>
-        <img class="content_icon" src="https://i.ibb.co/RvMF7Zj/White-77.png" alt="Icon image of a checkmark" title="View the playlist of content to ensure you are up to date on mandatory training"/>
+        <h2 class="content_header" title="View the playlist of content to ensure you are up to date on mandatory training for food handlers">Phase 1 - The Way We Work (Food Handlers)</h2>
+        <img class="content_icon" src="https://i.ibb.co/RvMF7Zj/White-77.png" alt="Icon image of a checkmark" title="View the playlist of content to ensure you are up to date on mandatory training for food handlers"/>
       </a>
+      <div class="infoButton">
+        <img class="infoLogo" id="info1a" src="https://i.ibb.co/4RbWPzH/information-button-sdx.png" alt="information icon that links to pop-up" title="More information"/>
+      </div>
     </div>
     <div class="content_container" id="block1b">
       <a href="https://#" onclick="this.href=P1BURL" alt="Link to the phase 1 mandatory training that should already have been completed playlist on Ingenium that opens in a new window" target="_blank">
-        <h2 class="content_header" title="As a hiring manager, you will be aware that there is mandatory training that is specific to your role relating to the hiring of employees. Clicking on this link will take you to an Ingenium playlist of training especially curated for hiring managers like yourself. You should have already completed these topics, but please take a moment now to check on the playlist (blue tick) that you have done so, and if not please take some time to catch up">Phase 1 - The Way We Work (People Managers)</h2>
-        <img class="content_icon" src="https://i.ibb.co/RvMF7Zj/White-77.png" alt="Icon image of a checkmark" title="View the playlist of content to ensure you are up to date on mandatory training"/>
+        <h2 class="content_header" title="View the playlist of content to ensure you are up to date on mandatory training for hiring managers">Phase 1 - The Way We Work (People Managers)</h2>
+        <img class="content_icon" src="https://i.ibb.co/RvMF7Zj/White-77.png" alt="Icon image of a checkmark" title="View the playlist of content to ensure you are up to date on mandatory training for hiring managers"/>
       </a>
+      <div class="infoButton">
+        <img class="infoLogo" id="info1b" src="https://i.ibb.co/4RbWPzH/information-button-sdx.png" alt="information icon that links to pop-up" title="More information"/>
+      </div>
     </div>
     <div class="content_container" id="block1c">
       <a href="https://#" onclick="this.href=P1CURL" alt="Link to the phase 1 mandatory training that should already have been completed playlist on Ingenium that opens in a new window" target="_blank">
-        <h2 class="content_header" title="As a member of the team, you will be aware that there is mandatory training that is specific to your role. Clicking on this link will take you to an Ingenium playlist of training especially curated for colleagues like yourself. You should have already completed these topics, but please take a moment now to check on the playlist (blue tick) that you have done so, and if not please take some time to catch up.">Phase 1 - The Way We Work (Others)</h2>
+        <h2 class="content_header" title="View the playlist of content to ensure you are up to date on mandatory training.">Phase 1 - The Way We Work (Others)</h2>
         <img class="content_icon" src="https://i.ibb.co/RvMF7Zj/White-77.png" alt="Icon image of a checkmark" title="View the playlist of content to ensure you are up to date on mandatory training"/>
       </a>
+      <div class="infoButton">
+        <img class="infoLogo" id="info1c" src="https://i.ibb.co/4RbWPzH/information-button-sdx.png" alt="information icon that links to pop-up" title="More information"/>
+      </div>
     </div>
     <div class="content_container" id="block2">
       <a href="https://#" onclick="this.href=P2URL" alt="Link to the phase 2 keeping your skills current playlist on Ingenium that opens in a new window" target="_blank">
-        <h2 class="content_header" title="As we go through these challenging times, it is important that we continue to develop. To support you to keep your skills fresh and up to date, we have curated a playlist of learning content, that includes some short micro learning modules on using technology to work and connect remotely. Click the link to explore the playlist and pick out modules that interest or have specific relevance to you.">Phase 2 - Keeping your skills current</h2>
+        <h2 class="content_header" title="View the playlist of content to help keep your skills current on Ingenium">Phase 2 - Keeping your skills current</h2>
         <img class="content_icon" src="https://i.ibb.co/7NTk9Q9/White-50.png" alt="Icon image of a checklist" title="View the playlist of content to help keep your skills current on Ingenium"/>
       </a>
+      <div class="infoButton">
+        <img class="infoLogo" id="info2" src="https://i.ibb.co/4RbWPzH/information-button-sdx.png" alt="information icon that links to pop-up" title="More information"/>
+      </div>
     </div>
     <div class="content_container" id="block3">
       <a href="https://#" onclick="this.href=P3URL" alt="Link to the phase 3 getting ready to re-open playlist on Ingenium that opens in a new window" target="_blank">
@@ -187,56 +261,75 @@ align-self: flex-end;
     </div>
   </div>
 
-
   <script>
+
+    var newTitle = "My New Title"
+    var newMessage = "My New Message"
 
     var P2URL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d8abbef68-7787-4677-9eff-94b1ec8cfef4";
 
-  var P1AURL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d658a5684-b617-491a-8400-5f13f934ddc3";
+    var P1AURL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d658a5684-b617-491a-8400-5f13f934ddc3";
 
-  var P1BURL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253db769186d-d1f1-4bbd-b0e7-fc25517c8fd7"
+    var P1BURL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253db769186d-d1f1-4bbd-b0e7-fc25517c8fd7"
 
-  var P1CURL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253debca7c1f-24eb-4b42-9a5e-ad04877d16cc"
+    var P1CURL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253debca7c1f-24eb-4b42-9a5e-ad04877d16cc"
 
-  var P3URL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d89911c38-899c-4d6c-b54e-a76391cd1dd5";
+    var P3URL = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d89911c38-899c-4d6c-b54e-a76391cd1dd5";
 
-  var info3Message = "As we collectively start to prepare for the new normal in the post-lockdown world, we have curated a playlist of learning modules specifically intended to help you get ready to resume business, including some modules to provide you the opportunity to reflect on how things used to be and see where changes should be made in adapting to the new reality. \nClick the link to explore the playlist and choose modules that relate to you and your area of the business."
+    var info3Message = "As we collectively start to prepare for the new normal in the post-lockdown world, we have curated a playlist of learning modules specifically intended to help you get ready to resume business, including some modules to provide you the opportunity to reflect on how things used to be and see where changes should be made in adapting to the new reality. \nClick the link to explore the playlist and choose modules that relate to you and your area of the business."
 
-  var info2Message = "Message 2"
+    var info2Message = "As we go through these challenging times, it is important that we continue to develop. To support you to keep your skills fresh and up to date, we have curated a playlist of learning content, that includes some short micro learning modules on using technology to work and connect remotely. \nClick the link to explore the playlist and pick out modules that interest or have specific relevance to you."
 
-  var info1cMessage = "Message 1c"
+    var info1cMessage = "As a member of the team, you will be aware that there is mandatory training that is specific to your role. \nClicking on this link will take you to an Ingenium playlist of training especially curated for colleagues like yourself. You should have already completed these topics, but please take a moment now to check on the playlist (blue tick) that you have done so, and if not please take some time to catch up."
 
-  var info1bMessage = "Message 1b"
+    var info1bMessage = "As a hiring manager, you will be aware that there is mandatory training that is specific to your role relating to the hiring of employees. Clicking on this link will take you to an Ingenium playlist of training especially curated for hiring managers like yourself. \n You should have already completed these topics, but please take a moment now to check on the playlist (blue tick) that you have done so, and if not please take some time to catch up"
 
-  var info1aMessage = "Message 1a"
+    var info1aMessage = "As a food handling member of the team, you will be aware that there is mandatory training that is specific to your role. Clicking on this link will take you to an Ingenium playlist of training especially curated for food handlers like yourself. You should have already completed these topics, but please take a moment now to check on the playlist (blue tick) that you have done so, and if not please take some time to catch up."
 
-  $(document).ready(function(){
-    //jQuery code all goes inside this function
+    $(document).ready(function(){
 
-    $('img').bind('click', function (evt)
-       {
-         if($(this).attr('id') == 'info1a')
-         {
-            alert(info1aMessage);
-         }
-         if($(this).attr('id') == 'info1b')
-         {
-            alert(info1aMessage);
-         }
-         if($(this).attr('id') == 'info1c')
-         {
-           alert(info1cMessage);
-         }
-         if($(this).attr('id') == 'info2')
-         {
-           alert(info2Message);
-         }
-         if($(this).attr('id') == 'info3')
-         {
-           alert(info3Message);
-         }
-       });
-  })
+      $('.infoLogo').bind('click', function (evt)
+      {
+        if($(this).attr('id') == 'info1a')
+        {
+          newTitle = "The Way We Work for Food Handlers";
+          newMessage = info1aMessage;
+        }
+        if($(this).attr('id') == 'info1b')
+        {
+          newTitle = "The Way We Work for Hiring Managers";
+          newMessage = info1bMessage;
+        }
+        if($(this).attr('id') == 'info1c')
+        {
+          newTitle = "The Way We Work";
+          newMessage = info1cMessage;
+        }
+        if($(this).attr('id') == 'info2')
+        {
+          newTitle = "Keeping your skills current";
+          newMessage = info2Message;
+        }
+        if($(this).attr('id') == 'info3')
+        {
+          newTitle = "Getting ready to reopen";
+          newMessage = info3Message;
+        }
+        //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
+
+      });
+      $(".infoLogo").on("click", function() {
+        $(".popup-overlay, .popup-content").addClass("active");
+        $("#popupTitle").text(newTitle);
+        $("#popupMessage").text(newMessage);
+      });
+
+      //removes the "active" class to .popup and .popup-content when the "Close" button is clicked
+      $(".close, .popup-overlay").on("click", function() {
+        $(".popup-overlay, .popup-content").removeClass("active");
+      });
+    })
   </script>
 </body>
+  <!--Code written and published by Jon Moon, reserving the rights to be identified as the author of this code-->
 </html>
