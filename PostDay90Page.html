@@ -10,10 +10,58 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-  <script src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <style>
+
+body {
+
+}
+
+.header_bar {
+
+}
+
+.main_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_content {
+
+}
+
+.content_overview {
+
+}
+
+.content_block {
+
+}
+
+.Nav_Button a:link, a:visited {
+  background-color: #2A295C;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 50px;
+  height: auto;
+  border-radius: 25px;
+  vertical-align: top;
+  font-family: Sansa Pro Black, Arial, sans-serif;
+  font-size: 14pt;
+}
+
+#tabs {
+
+}
 
 </style>
 <body>
@@ -26,7 +74,7 @@
         <p>This page has been put together to help you identify what further learning wil support you in your role. You should use the details below to guide you in preparing your learning plan and then discuss this with your line manager through the Aspire check-in process.</p>
         <p>You may find that your role covers more than one of the tabs below, in which case please browse all the relevant links to identify the learning relevant for you.</p>
       </div>
-      <div class="content_block">
+      <div class="content_block" id="tabs">
         <ul>
           <li><a href="#tabs-1">Nunc tincidunt</a></li>
           <li><a href="#tabs-2">Proin dolor</a></li>
@@ -50,7 +98,7 @@
 <script>
 
 $( function() {
-  $( "#content_block" ).tabs();
+  $( "#tabs" ).tabs();
 } );
 
 </script>
