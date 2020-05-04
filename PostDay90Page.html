@@ -59,7 +59,13 @@ body {
   font-size: 14pt;
   align-self: center;
 }
+.ui-accordion-header-active {
+  background-color: #2A295C;
+}
 
+.ui-tabs-active {
+  background-color: #2A295C;
+}
 #tabs {
 
 }
@@ -77,6 +83,9 @@ body {
       </div>
       <div class="content_block" id="tabs">
         <ul>
+          <li><a href="#tabs-1">Nunc tincidunt</a></li>
+          <li><a href="#tabs-2">Proin dolor</a></li>
+          <li><a href="#tabs-3">Aenean lacinia</a></li>
           <li><a href="#tabs-1">Nunc tincidunt</a></li>
           <li><a href="#tabs-2">Proin dolor</a></li>
           <li><a href="#tabs-3">Aenean lacinia</a></li>
@@ -138,12 +147,15 @@ body {
 <script>
 
 $( function() {
-  $( "#tabs" ).tabs();
+  $( "#tabs" ).tabs({
+    active:0
+  });
 } );
 
 $( function() {
   $( "#accordion" ).accordion({
-    collapsible: true
+    collapsible: true,
+    active: false
   });
 } );
 
