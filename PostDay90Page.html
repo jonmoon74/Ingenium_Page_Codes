@@ -17,30 +17,55 @@
 <style>
 
 body {
-
+  background-image: url('https://i.ibb.co/YkBvLW6/Covid-Background-Faded.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .header_bar {
-
+  background-color: #2A295C;
+  color:#FFFFFF;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 18pt;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 10px;
 }
 
 .main_area {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  background-color: #D3D0C9CC;
 }
 
 .main_content {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .content_overview {
-
+  max-width: 40%;
+  border-radius: 40px;
+  padding: 10px;
+  background-color: #2A295C;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12pt;
 }
 
 .content_block {
+  max-width: 40%;
+  text-align: left;
+  font-size: 12pt;
+}
 
+.content_block .Nav_Button {
+  text-align: center;
 }
 
 .Nav_Button a:link, a:visited {
@@ -59,15 +84,21 @@ body {
   font-size: 14pt;
 }
 
-.ui-accordion-header-active {
+#tabs .ui-tabs-nav .ui-state-active a {
   background-color: #2A295C;
 }
 
-.ui-tabs-active {
-  background-color: #2A295C;
-}
-#tabs {
+@media only screen and (max-width: 775px) {
+  .main_content{
+    flex-direction: column;
+  }
+  .content_block {
+    max-width: 90%;
+  }
 
+  .content_overview {
+    max-width: 90%;
+  }
 }
 
 </style>
@@ -76,66 +107,47 @@ body {
   </div>
   <div class="main_area">
     <div class="main_content">
-      <div class="content_overview">
+      <div class="content_overview" style="order:1">
         <p>Now that you have completed all of your initial learning modules, there will be some additional learning that is relevant to you based on the professional family you are part of.</p>
-        <p>This page has been put together to help you identify what further learning wil support you in your role. You should use the details below to guide you in preparing your learning plan and then discuss this with your line manager through the Aspire check-in process.</p>
+        <p>This page has been put together to help you identify what further learning will support you in your role. You should use the details provided to guide you in preparing your learning plan and then discuss this with your line manager through the Aspire check-in process.</p>
         <p>You may find that your role covers more than one of the tabs below, in which case please browse all the relevant links to identify the learning relevant for you.</p>
       </div>
-      <div class="content_block" id="tabs">
+      <div class="content_block" id="tabs" style="order:2">
         <ul>
-          <li><a href="#tabs-1">Nunc tincidunt</a></li>
-          <li><a href="#tabs-2">Proin dolor</a></li>
-          <li><a href="#tabs-3">Aenean lacinia</a></li>
-          <li><a href="#tabs-1">Nunc tincidunt</a></li>
-          <li><a href="#tabs-2">Proin dolor</a></li>
-          <li><a href="#tabs-3">Aenean lacinia</a></li>
+          <li><a href="#tabs-1">Food Operations</a></li>
+          <li><a href="#tabs-2">Dealing with payments</a></li>
+          <li><a href="#tabs-3">Client Focus</a></li>
+          <li><a href="#tabs-4">Payroll</a></li>
+          <li><a href="#tabs-5">People Management</a></li>
         </ul>
-        <div id="tabs-1">
+        <div class="tabs_text" id="tabs-1">
           <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
           <p class="Nav_Button">
-            <a href="https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-alerts/coronavirus-information.html" alt="Link to the information pages on Sodexo-Net" target="_blank">Sodexo_Net Covid-19 Resources</a>
+            <a href="https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d9c4fd618-001e-4891-8170-01ea41722d63" alt="Link to the food operations playlist on Ingenium that opens in a new window" target="_blank">Food Operations Learning</a>
           </p>
         </div>
-        <div id="tabs-2">
+        <div class="tabs_text" id="tabs-2">
           <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
           <p class="Nav_Button">
-            <a href="https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-alerts/coronavirus-information.html" alt="Link to the information pages on Sodexo-Net" target="_blank">Sodexo_Net Covid-19 Resources</a>
+            <a href="https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253daa5fbf36-a77e-4cbd-974b-ff541283251b" alt="Link to the dealing with payments playlist on Ingenium that opens in a new window" target="_blank">Dealing with payments learning</a>
           </p>
         </div>
-        <div id="tabs-3">
+        <div class="tabs_text" id="tabs-3">
           <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
           <p class="Nav_Button">
-            <a href="https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-alerts/coronavirus-information.html" alt="Link to the information pages on Sodexo-Net" target="_blank">Sodexo_Net Covid-19 Resources</a>
+            <a href="https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253d48c3bb7d-0f9a-47ac-82da-913fb186dad3" alt="Link to the icleint focus playlist on Ingenium that opens in a new window" target="_blank">Client Focus learning</a>
           </p>
         </div>
-      </div>
-      <div id="accordion">
-        <h3>Section 1</h3>
-        <div>
-          <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+        <div class="tabs_text" id="tabs-4">
+          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
           <p class="Nav_Button">
-            <a href="https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-alerts/coronavirus-information.html" alt="Link to the information pages on Sodexo-Net" target="_blank">Sodexo_Net Covid-19 Resources</a>
+            <a href="https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253dabdf753e-2b6c-48cf-8d32-6064994d52a4" alt="Link to the payroll training playlist on Ingenium that opens in a new window" target="_blank">Payroll learning</a>
           </p>
         </div>
-        <h3>Section 2</h3>
-        <div>
-          <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+        <div class="tabs_text" id="tabs-5">
+          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
           <p class="Nav_Button">
-            <a href="https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-alerts/coronavirus-information.html" alt="Link to the information pages on Sodexo-Net" target="_blank">Sodexo_Net Covid-19 Resources</a>
-          </p>
-        </div>
-        <h3>Section 3</h3>
-        <div>
-          <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-          <p class="Nav_Button">
-            <a href="https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-alerts/coronavirus-information.html" alt="Link to the information pages on Sodexo-Net" target="_blank">Sodexo_Net Covid-19 Resources</a>
-          </p>
-        </div>
-        <h3>Section 4</h3>
-        <div>
-          <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-          <p class="Nav_Button">
-            <a href="https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-alerts/coronavirus-information.html" alt="Link to the information pages on Sodexo-Net" target="_blank">Sodexo_Net Covid-19 Resources</a>
+            <a href="https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253da8cb5d12-fed7-44ac-9588-82e69c0e7cf0" alt="Link to the people management playlist on Ingenium that opens in a new window" target="_blank">People Management Learning</a>
           </p>
         </div>
       </div>
@@ -148,16 +160,10 @@ body {
 
 $( function() {
   $( "#tabs" ).tabs({
-    collapsible: true,
-    active:false
+    active:4,
+    //event: "mouseover"
   });
 } );
 
-$( function() {
-  $( "#accordion" ).accordion({
-    collapsible: true,
-    active: false
-  });
-} );
 
 </script>
