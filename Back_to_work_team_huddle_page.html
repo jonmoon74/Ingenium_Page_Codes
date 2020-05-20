@@ -24,16 +24,24 @@ body {
 }
 
 .header_bar {
-  background-color: #2A295C;
-  color:#FFFFFF;
-  text-align: center;
-  padding: 5px 10px;
-  font-size: 18pt;
-  font-weight: bold;
+
   display: flex;
   justify-content: center;
   max-height: 200px;
   margin-top: 10px;
+}
+
+.header_text {
+  background-color: #D3D0C9;
+  color:#2A295C;
+  text-align: center;
+  padding: 1px 10px;
+  font-size: 18pt;
+  font-weight: bold;
+  border-style: groove;
+  border-color: #D3D0C9;
+  border-width: thick;
+  border-radius: 40px;
 }
 
 .main_area {
@@ -137,7 +145,9 @@ body {
 .bottom_of_the_page {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 button {
@@ -176,7 +186,7 @@ button:hover {
 }
 
 #accordion .ui-accordion-content {
-
+  height: auto;
 }
 
 #accordion .ui-accordion-header-active {
@@ -192,7 +202,9 @@ button:hover {
 
 <body>
   <div class="header_bar">
-    <h1>Team Huddles</h1>
+    <div class="header_text">
+      <h1>Team Huddles</h1>
+    </div>
   </div>
 
   <div class="main_area" id="accordion">
@@ -213,7 +225,8 @@ button:hover {
     </div>
   </div>
     <h3>Section 2</h3>
-    <div>
+    <div class="accordion_element">
+      <div class="text_block">
       <p>
         Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
         ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
@@ -221,8 +234,15 @@ button:hover {
         odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
       </p>
     </div>
+    <div class="link_block">
+      <a href="https://#" alt="blank link" target="_blank">
+        <button>Click Me!</button>
+      </a>
+    </div>
+  </div>
     <h3>Section 3</h3>
-    <div>
+    <div class="accordion_element">
+      <div class="text_block">
       <p>
         Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
         ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
@@ -230,8 +250,15 @@ button:hover {
         odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
       </p>
     </div>
+    <div class="link_block">
+      <a href="https://#" alt="blank link" target="_blank">
+        <button>Click Me!</button>
+      </a>
+    </div>
+  </div>
     <h3>Section 4</h3>
-    <div>
+    <div class="accordion_element">
+      <div class="text_block">
       <p>
         Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
         ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
@@ -239,8 +266,15 @@ button:hover {
         odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
       </p>
     </div>
+    <div class="link_block">
+      <a href="https://#" alt="blank link" target="_blank">
+        <button>Click Me!</button>
+      </a>
+    </div>
+  </div>
     <h3>Section 5</h3>
-    <div>
+    <div class="accordion_element">
+      <div class="text_block">
       <p>
         Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
         ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
@@ -248,9 +282,16 @@ button:hover {
         odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
       </p>
     </div>
+    <div class="link_block">
+      <a href="https://#" alt="blank link" target="_blank">
+        <button>Click Me!</button>
+      </a>
+    </div>
+  </div>
 
   </div>
   <div class="bottom_of_the_page">
+<!--
     <div class="lower_text_bar">
       <div class="DPSBox" title="Sodexo Covid-19 pages on Sodexo_Net">
         <p class="Nav_Button">
@@ -265,7 +306,7 @@ button:hover {
           <a href="https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%2525253ddbcee377-577b-48b7-aaab-325587f5f78c" alt="Link to a playlist of external learning resources that opens in a new window" target="_blank"  id="coolLink">Cool External Learning <i class="em em-sunglasses" aria-role="presentation" aria-label="SMILING FACE WITH SUNGLASSES" style="font-size: 12pt;"></i></a>
         </p>
       </div>
-    </div>
+    </div>-->
 
     <div class="footer_bar">
       <div class="DPSBox" title="Read the Sodexo Ingenium Data Privacy Statement">
