@@ -86,6 +86,22 @@ body {
   align-items: flex-end;
 }
 
+.accordion_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text_block {
+  width:100%;
+  height: auto;
+}
+
+.link_block {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 button {
   display: inline-block;
   vertical-align: middle;
@@ -95,25 +111,13 @@ button {
   color: #2A295C;
   background: ##D3D0C9;
   border: 1px solid #2A295C;
+  min-width: 250px;
 }
 
 button:hover {
   border: 1px solid #2A295C;
   background: #2A295C;
   color: #D3D0C9;
-}
-.accordion_element {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.text_block {
-  max-width: 80%;
-}
-
-.link_block {
-  max-width: 20%;
-  align-self: center;
 }
 
 .intro_text{
@@ -160,90 +164,100 @@ button:hover {
   </div>
   <div class="intro_text">
     <p>
-      Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-      ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-      amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-      odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+      Your people are returning to work and it’s entirely natural that they may feel apprehensive about this. They may also be hungry for information about what the new normal looks like on your site and for them specifically.<br />
+      One really effective way of allowing your people to share how they are feeling and to provide them with specific guidance and support to help them get back to work is by setting up some team huddles. <br />
+      The steps below will help you lead your team through effective team huddles.
     </p>
   </div>
   <div class="main_area" id="accordion">
-    <h3>Section 1</h3>
+    <h3>1. Looking after yourself</h3>
     <div class="accordion_element">
       <div class="text_block">
       <p>
-        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        Before you can effectively support your team with their concerns, you need to take care of yourself and your own concerns.<br />
+        Use the buttons to access some of our range of resources to help you with mental health and wellbeing, as well as the importance of positivity.
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" alt="blank link" target="_blank">
-        <button>Click Me!</button>
+      <a href="https://#" onclick="this.href=positiveModule" alt="blank link" target="_blank">
+        <button>Being Positive</button>
+      </a>
+      <a href="https://#" onclick="this.href=happyModule" alt="blank link" target="_blank">
+        <button>Happiness</button>
+      </a>
+      <a href="https://#" onclick="this.href=worriesModule" alt="blank link" target="_blank">
+        <button>Worries</button>
+      </a>
+      <a href="https://#" onclick="this.href=wellbeingHub" alt="blank link" target="_blank">
+        <button>Wellbeing Hub</button>
       </a>
     </div>
   </div>
-    <h3>Section 2</h3>
+    <h3>2. Leading a team huddle?</h3>
     <div class="accordion_element">
       <div class="text_block">
       <p>
-        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        Remember a team huddle is a daily or weekly meeting that is short, focused and interactive. <br />
+        Use the first button to read a manager’s guide on how to design a successful Team Huddle. <br />
+        The second button takes you to a micro learning module on how to communicate effectively.
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" alt="blank link" target="_blank">
-        <button>Click Me!</button>
+      <a href="https://#" onclick="this.href=SNHuddlesURL" alt="blank link" target="_blank">
+        <button>Guide to team huddles</button>
+      </a>
+      <a href="https://#" onclick="this.href=commsModule" alt="blank link" target="_blank">
+        <button>Communicating effectively</button>
+      </a>
+      <a href="https://#" onclick="this.href=safetyMoments" alt="blank link" target="_blank">
+        <button>Safety Moments</button>
       </a>
     </div>
   </div>
-    <h3>Section 3</h3>
+    <h3>3. The importance of motivation</h3>
     <div class="accordion_element">
       <div class="text_block">
       <p>
-        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        What is motivation? Where does it come from? One thing’s for sure – if we lack motivation in ourselves or in our teams our performance, business results and our state of mind will be impacted.<br />Here are some short learning modules to help with understanding what motivation is and how to harness it’s power!
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" alt="blank link" target="_blank">
-        <button>Click Me!</button>
+      <a href="https://#" onclick="this.href=motivationModule" alt="blank link" target="_blank">
+        <button>The importance of motivation</button>
+      </a>
+      <a href="https://#" onclick="this.href=positiveModule" alt="blank link" target="_blank">
+        <button>Being positive</button>
       </a>
     </div>
   </div>
-    <h3>Section 4</h3>
+    <h3>4. Leading by example</h3>
     <div class="accordion_element">
       <div class="text_block">
       <p>
-        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+         Leading by example is a powerful tool. How you carry yourself as a leader, your actions and words have a massive impact on how your people respond to the day to day challenges we all face. Try these modules for some great hints and tips.
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" alt="blank link" target="_blank">
-        <button>Click Me!</button>
+      <a href="https://#" onclick="this.href=leadbyexample" alt="blank link" target="_blank">
+        <button>Leading by Example</button>
+      </a>
+      <a href="https://#" onclick="this.href=authenticLeader" alt="blank link" target="_blank">
+        <button>Being an authentic leader</button>
       </a>
     </div>
   </div>
-    <h3>Section 5</h3>
+    <h3>5. Coping with Change</h3>
     <div class="accordion_element">
       <div class="text_block">
       <p>
-        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+        It’s completely normal and healthy for us all to be affected by change, and it’s fair to say that the world has changed significantly in the last few months.
+        <br />
+        Why not take a few moments to look at the following short learning burst relating to change. So take a quiet moment to work out how you are feeling about the change all around us first – where is your head at – before applying this insight with your team.
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" alt="blank link" target="_blank">
-        <button>Click Me!</button>
+      <a href="https://#" onclick="this.href=changeModule" alt="blank link" target="_blank">
+        <button>Change</button>
       </a>
     </div>
   </div>
@@ -261,7 +275,6 @@ button:hover {
 </body>
 <script>
 
-
 $(document).ready(function() {
 
   $( '#accordion' ).accordion({
@@ -270,6 +283,31 @@ $(document).ready(function() {
   });
 
 })
+
+var SNHuddlesURL = "https://uk.sodexonet.com/files/live/sites/sdxnet-uk/files/SodexoNet_UK/2_News/Internal_Communications/Team_Huddles/Team%20huddle%20managers%20guide.pdf";
+
+var commsModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d344ecf83-0937-4570-bc6d-a94e8c02fb51";
+
+var happyModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d8a07db26-67fe-4936-a091-1c9365128252";
+
+var positiveModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d15c441c2-d388-453b-9e6c-d686d1d9ab5b";
+
+var leadbyexample = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d0294e442-bc06-4018-a58f-02d7932b4d83";
+
+var worriesModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d99aa3af6-3efe-43a1-b5cc-f5cdcd16f5ce";
+
+var mentalHModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d6f9d7699-3933-4ab9-bb7a-36ad867b9d01";
+
+var wellbeingHub = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d152'>https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d152";
+
+var motivationModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253db2ece062-add3-46a8-9336-de4a74cef40a";
+
+var changeModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253de316742b-0918-446d-90a0-49fb22953ced";
+
+var authenticLeader = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253dd0b62401-dd04-4eee-a805-6f97aebadc13";
+
+var safetyMoments = "https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-moments.html";
+
 </script>
 
 <!--Code written and published by Jon Moon, reserving the rights to be identified as the author of this code-->
