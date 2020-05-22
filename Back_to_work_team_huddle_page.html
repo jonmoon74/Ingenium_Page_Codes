@@ -23,6 +23,9 @@ body {
   background-size: cover;
 }
 
+span {
+  justify-content: space-between;
+}
 .header_bar {
   display: flex;
   justify-content: center;
@@ -96,27 +99,33 @@ body {
   height: auto;
 }
 
-.link_block {
+.link_block  {
   width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-button {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 30px;
-  margin: .20rem;
-  font-size: 1.5rem;
+.linkButton a:link, a:visited {
+  background-color: #D3D0C9;
   color: #2A295C;
-  background: ##D3D0C9;
-  border: 1px solid #2A295C;
-  min-width: 250px;
+  padding: 5px 10px;
+  margin-left: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 50px;
+  height: auto;
+  border-radius: 25px;
+  vertical-align: top;
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
 }
 
-button:hover {
-  border: 1px solid #2A295C;
-  background: #2A295C;
+.linkButton:hover a:link, a:visited {
+  background-color: #2A295C;
   color: #D3D0C9;
 }
 
@@ -159,7 +168,7 @@ button:hover {
 <body>
   <div class="header_bar">
     <div class="header_text">
-      <h1>Team Huddles</h1>
+      <h1>Having Conversations</h1>
     </div>
   </div>
   <div class="intro_text">
@@ -179,18 +188,26 @@ button:hover {
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" onclick="this.href=positiveModule" alt="blank link" target="_blank">
-        <button>Being Positive</button>
+      <span class="linkButton">
+      <a href="#" onclick="this.href=positiveModule" alt="link to a micro learning module on positivity which opens in a new window" target="_blank">
+        Being Positive
       </a>
-      <a href="https://#" onclick="this.href=happyModule" alt="blank link" target="_blank">
-        <button>Happiness</button>
+    </span>
+    <span class="linkButton">
+      <a href="https://#" onclick="this.href=happyModule" alt="Link to a micro learning module on happiness which opens in a new window" target="_blank">
+        Happiness
       </a>
-      <a href="https://#" onclick="this.href=worriesModule" alt="blank link" target="_blank">
-        <button>Worries</button>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=worriesModule" alt="Link to a micro learning module on Worries and overcoming them which opens in a new window" target="_blank">
+        Worries
       </a>
-      <a href="https://#" onclick="this.href=wellbeingHub" alt="blank link" target="_blank">
-        <button>Wellbeing Hub</button>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=wellbeingHub" alt="Link to the Sodexo UK & I Wellbeing hub which opens in a new window" target="_blank">
+        Wellbeing Hub
       </a>
+      </span>
     </div>
   </div>
     <h3>2. Leading a team huddle?</h3>
@@ -199,19 +216,26 @@ button:hover {
       <p>
         Remember a team huddle is a daily or weekly meeting that is short, focused and interactive. <br />
         Use the first button to read a manager’s guide on how to design a successful Team Huddle. <br />
-        The second button takes you to a micro learning module on how to communicate effectively.
+        The second button takes you to a micro learning module on how to communicate effectively.<br />
+        The third to the SodexoNet page where you can find a range of Safety Moments to use.
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" onclick="this.href=SNHuddlesURL" alt="blank link" target="_blank">
-        <button>Guide to team huddles</button>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=SNHuddlesURL" alt="Link to the Sodexo guide to effective team huddles which opens in a new window" target="_blank">
+        Guide to team huddles
       </a>
-      <a href="https://#" onclick="this.href=commsModule" alt="blank link" target="_blank">
-        <button>Communicating effectively</button>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=commsModule" alt="Link to a micor learning module on effective communication which opens in a new window" target="_blank">
+        Communicating effectively
       </a>
-      <a href="https://#" onclick="this.href=safetyMoments" alt="blank link" target="_blank">
-        <button>Safety Moments</button>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=safetyMoments" alt="Link to the SodexoNet page on Safety Moments which opens in a new window" target="_blank">
+        Safety Moments
       </a>
+      </span>
     </div>
   </div>
     <h3>3. The importance of motivation</h3>
@@ -222,12 +246,16 @@ button:hover {
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" onclick="this.href=motivationModule" alt="blank link" target="_blank">
-        <button>The importance of motivation</button>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=motivationModule" alt="Link to a micro learning module on the importance of motivation which opens in a new window" target="_blank">
+        The importance of motivation
       </a>
-      <a href="https://#" onclick="this.href=positiveModule" alt="blank link" target="_blank">
-        <button>Being positive</button>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=positiveModule" alt="Link to t a micro learning module on positivity which opens in a new window" target="_blank">
+        Being positive
       </a>
+      </span>
     </div>
   </div>
     <h3>4. Leading by example</h3>
@@ -238,12 +266,16 @@ button:hover {
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" onclick="this.href=leadbyexample" alt="blank link" target="_blank">
-        <button>Leading by Example</button>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=leadbyexample" alt="Link to a micro learning module on leading by example which opens in a new window" target="_blank">
+        Leading by Example
       </a>
-      <a href="https://#" onclick="this.href=authenticLeader" alt="blank link" target="_blank">
-        <button>Being an authentic leader</button>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=authenticLeader" alt="Link to learning module on authentic leadership that opens in a new window" target="_blank">
+        Being an authentic leader
       </a>
+      </span>
     </div>
   </div>
     <h3>5. Coping with Change</h3>
@@ -256,9 +288,16 @@ button:hover {
       </p>
     </div>
     <div class="link_block">
-      <a href="https://#" onclick="this.href=changeModule" alt="blank link" target="_blank">
-        <button>Change</button>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=changeModule" alt="Link to learning module on change management awareness that opens in a new window" target="_blank">
+        Change
       </a>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=pscyhChange" alt="Link to a video on the psychology of change which opens in a new window" target="_blank">
+        The Psychology of change
+      </a>
+      </span>
     </div>
   </div>
 
@@ -286,27 +325,29 @@ $(document).ready(function() {
 
 var SNHuddlesURL = "https://uk.sodexonet.com/files/live/sites/sdxnet-uk/files/SodexoNet_UK/2_News/Internal_Communications/Team_Huddles/Team%20huddle%20managers%20guide.pdf";
 
-var commsModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d344ecf83-0937-4570-bc6d-a94e8c02fb51";
+var commsModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d344ecf83-0937-4570-bc6d-a94e8c02fb51";
 
-var happyModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d8a07db26-67fe-4936-a091-1c9365128252";
+var happyModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d8a07db26-67fe-4936-a091-1c9365128252";
 
-var positiveModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d15c441c2-d388-453b-9e6c-d686d1d9ab5b";
+var positiveModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d15c441c2-d388-453b-9e6c-d686d1d9ab5b";
 
-var leadbyexample = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d0294e442-bc06-4018-a58f-02d7932b4d83";
+var leadbyexample = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d15c441c2-d388-453b-9e6c-d686d1d9ab5b";
 
-var worriesModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d99aa3af6-3efe-43a1-b5cc-f5cdcd16f5ce";
+var worriesModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d99aa3af6-3efe-43a1-b5cc-f5cdcd16f5ce";
 
-var mentalHModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253d6f9d7699-3933-4ab9-bb7a-36ad867b9d01";
+var mentalHModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d6f9d7699-3933-4ab9-bb7a-36ad867b9d01";
 
-var wellbeingHub = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d152'>https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d152";
+var wellbeingHub = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d152";
 
-var motivationModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253db2ece062-add3-46a8-9336-de4a74cef40a";
+var motivationModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253db2ece062-add3-46a8-9336-de4a74cef40a";
 
-var changeModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253de316742b-0918-446d-90a0-49fb22953ced";
+var changeModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253de316742b-0918-446d-90a0-49fb22953ced";
 
-var authenticLeader = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dlodetails%2526lo%253dd0b62401-dd04-4eee-a805-6f97aebadc13";
+var authenticLeader = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253dd0b62401-dd04-4eee-a805-6f97aebadc13";
 
 var safetyMoments = "https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-moments.html";
+
+var pscyhChange = "https://play.buto.tv/MBFfQ"
 
 </script>
 
